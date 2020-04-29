@@ -30,7 +30,9 @@ def morse_decoder(morse_codes):
                 print(message, end='')
             elif code == '':
                 space.append(code)
-                if len(space) % 2 != 0:
+                if len(space) == 1:
+                  continue
+                elif len(space) % 2 != 0:
                     code = ''
                     message = ''.join(morse_alphabets[code])
                     print(message, end='')
