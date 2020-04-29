@@ -27,33 +27,33 @@ location = {0: {'desc': 'you are sitting in front of your pc learning python',
                       'VALLY': '4',
                       'FOREST': '5'}}
 
-exit = {0: {'Q': 0},
-        1: {'W': 2, 'E': 3, 'S': 4, 'Q': 0, 'N': 5},
-        2: {'N': 5, 'Q': 0},
-        3: {'W': 1, 'Q': 0},
-        4: {'N': 1, 'W': 2, 'Q': 0},
-        5: {'W': 2, 'S': 1, 'Q': 0}}
+# exit = {0: {'Q': 0},
+#         1: {'W': 2, 'E': 3, 'S': 4, 'Q': 0, 'N': 5},
+#         2: {'N': 5, 'Q': 0},
+#         3: {'W': 1, 'Q': 0},
+#         4: {'N': 1, 'W': 2, 'Q': 0},
+#         5: {'W': 2, 'S': 1, 'Q': 0}}
 
-f_exit = {1: {'2': 2, '3': 3, '4': 4, '5': 5},
-          2: {'5': 5},
-          3: {'1': 1},
-          4: {'1': 1, '2': 2},
-          5: {'2': 2, '1': 1}}
+# f_exit = {1: {'2': 2, '3': 3, '4': 4, '5': 5},
+#           2: {'5': 5},
+#           3: {'1': 1},
+#           4: {'1': 1, '2': 2},
+#           5: {'2': 2, '1': 1}}
 
-words = {'WEST': 'W',
-         'NORTH': 'N',
-         'SOUTH': 'S',
-         'EAST': 'E',
-         'QUIT': 'Q',
-         'ROAD': '1',
-         'HILL': '2',
-         'BUILDING': '3',
-         'VALLY': '4',
-         'FOREST': '5'}
+# words = {'WEST': 'W',
+#          'NORTH': 'N',
+#          'SOUTH': 'S',
+#          'EAST': 'E',
+#          'QUIT': 'Q',
+#          'ROAD': '1',
+#          'HILL': '2',
+#          'BUILDING': '3',
+#          'VALLY': '4',
+#          'FOREST': '5'}
 
-print(location[1]['exits'])
-print(location[1].keys())
-print(location[1])
+# print(location[1]['exits'])
+# print(location[1].keys())
+# print(location[1])
 loc = 1
 while True:
     available_exit = ', '.join(location[loc]['exits'].keys())
