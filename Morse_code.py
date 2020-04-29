@@ -13,9 +13,9 @@ morse_alphabets = {'.-': 'A', '-...': 'B', '-.-.': 'C', '-..': 'D',
                    '----.': '9', '-----': '0'}
 
 
-# Alphabelt_morse = {v: k for k, v in morse_alphabets.items()}
-#
-# print(Alphabelt_morse)
+Alphabelt_morse = {v: k for k, v in morse_alphabets.items()}    #inverse of the morse dictionary for morse code to human
+
+print(Alphabelt_morse)
 
 
 def morse_decoder(morse_codes):
