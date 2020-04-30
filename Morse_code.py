@@ -1,4 +1,7 @@
 # CODEWARS MORSE CODE TO HUMAN READABLE LANGUAGE
+# morse codes are writing in DOTS '.' and DASHES '-'
+# the spacings btw each LETTERS of a word are one and the spacing btw WORDS are three(3)
+issue: # while interpreting any space before or after the message should be ignored 
 
 
 morse_alphabets = {'.-': 'A', '-...': 'B', '-.-.': 'C', '-..': 'D',
