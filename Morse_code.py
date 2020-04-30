@@ -46,3 +46,20 @@ def morse_decoder(morse_codes):
 
 morse_decoder('.... . -.--   .--- ..- -.. .   .... --- .--   .- .-. .   -.-- --- ..-')
 
+
+# found a better way
+# strip method did the while loop work
+
+def morse_decoder(morse_codes):
+    morse_codes = morse_codes.strip().split('  ')   # to split the morse input to units
+    message = []
+    for words in morse_codes:
+        for letters in words.split(' '):
+            message.append(morse_alphabets[letters])
+    answer = ''.join(message)
+    return answer
+  
+  
+  morse_decoder('.... . -.--   .--- ..- -.. .   .... --- .--   .- .-. .   -.-- --- ..-')
+
+
